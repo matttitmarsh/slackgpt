@@ -1,8 +1,9 @@
+import os
+
 SLACK_BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
 SLACK_APP_TOKEN = os.getenv("SLACK_APP_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-import os
 import openai
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 from slack import WebClient
